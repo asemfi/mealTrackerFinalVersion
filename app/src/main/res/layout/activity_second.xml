@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:background="@color/background">
+
+    <ImageButton
+        android:id="@+id/imgDelete"
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="8dp"
+        android:background="#00FF"
+        android:onClick="deleteFromRecyclerView"
+        android:src="@drawable/baseline_delete_24"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_calorie"
+        app:layout_constraintStart_toEndOf="@+id/tv_calorie"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/user_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="208dp"
+        android:textColor="@color/text"
+        android:textSize="40sp"
+        android:fontFamily="@font/cabin_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="100dp"
+        android:layout_height="43dp"
+
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_dropshadow"
+        android:elevation="20dp"
+        android:ems="25"
+        android:fontFamily="@font/cabin_bold"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:padding="10dp"
+
+
+        android:queryHint="Enter a food to add to your meal"
+        android:textColor="@color/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name2" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/buttonGrad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:ems="10"
+        android:onClick="addToRecyclerView"
+        android:text="@string/add_to_list_and_proceed"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+    <TextView
+        android:id="@+id/food_category"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/cabin_bold"
+        android:text="@string/food_category"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+    <TextView
+        android:id="@+id/serving_size"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cabin_bold"
+        android:text="@string/serving_size"
+        android:textColor="@color/text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/food_category" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:listitem="@layout/row_item" />
+
+    <TextView
+        android:id="@+id/tv_food_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Foods Eaten"
+        android:textColor="@color/text"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_calorie"
+        android:layout_width="86dp"
+        android:layout_height="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_food_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintStart_toEndOf="@+id/tv_food_list"
+        app:layout_constraintTop_toTopOf="@+id/tv_food_list"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calories:"
+        android:textColor="@color/text"
+        app:layout_constraintBottom_toTopOf="@+id/tv_calorie"
+        app:layout_constraintEnd_toEndOf="@+id/tv_calorie"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_calorie" />
+</androidx.constraintlayout.widget.ConstraintLayout>

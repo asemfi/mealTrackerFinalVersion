@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Diet Tracker</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="default_display">Nothing Yet</string>
+    <string name="default_info">Type a food to get started</string>
+    <string name="protein">Protein: </string>
+    <string name="carbs">Carbs: </string>
+    <string name="fats">Fats: </string>
+    <string name="units">0 units</string>
+
+    <string name="fiber">Fiber: </string>
+    <string name="vitamina">Vitamin A: </string>
+    <string name="vitamind">Vitamin D: </string>
+
+
+    <string name="menu_calorie_stats">Calories</string>
+    <string name="menu_food_stats">Food Trends</string>
+    <string name="menu_profile_tab">Profile</string>
+
+
+    <string name="profile_name">Your Name</string>
+    <string name="profile_height">Your Height</string>
+    <string name="add_to_list">Add To List</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="enter_targeted_calorie_intake">Enter Targeted Calorie Intake</string>
+    <string name="calorie_intake_progress">Calorie Intake Progress</string>
+    <string name="add_to_list_and_proceed">Add to List</string>
+    <string name="your_food_intake_list_for_today">Your Food Intake List for Today</string>
+    <string name="food_category">Food Category:</string>
+    <string name="serving_size">Serving Size:</string>
+    <string name="top_6_nutrients">Top 6 Nutrients</string>
+    <string name="in_dv_unit">In DV unit</string>
+
+</resources>

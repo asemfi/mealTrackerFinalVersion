@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/ProfileFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.profile.ProfileFragment" >
+
+    <TextView
+        android:id="@+id/txtProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/cabin_bold"
+        android:maxLength="20"
+
+        android:text="Your Name"
+        android:textColor="@color/text"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfile" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/profile_name"
+        android:visibility="invisible"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/text"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:text=""
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/txtProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+        android:text="Name:"
+        android:textColor="@color/text"
+        android:textSize="15dp"
+        android:visibility="invisible"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfile"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <View
+        android:id="@+id/viewa4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="30dp"
+
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_dropshadow"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewa3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/viewa3"
+        app:layout_constraintTop_toBottomOf="@+id/viewa3" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+
+        android:layout_margin="16dp"
+        android:text="Weight"
+        android:textColor="@color/text"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        android:translationZ="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewa4"
+        app:layout_constraintStart_toStartOf="@+id/viewa4"
+        app:layout_constraintTop_toTopOf="@+id/viewa4" />
+
+    <TextView
+        android:id="@+id/dialog_nutrient_unit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+        android:layout_marginTop="16dp"
+        android:translationZ="25dp"
+        android:text="Height"
+        android:textColor="@color/text"
+        android:textSize="15dp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/viewa3"
+        app:layout_constraintStart_toStartOf="@+id/viewa3"
+        app:layout_constraintTop_toTopOf="@+id/viewa3" />
+
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:fontFamily="@font/montserrat"
+        android:text="Your Weight"
+        android:textColor="@color/text"
+        android:textSize="12dp"
+        android:translationZ="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/txtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Your Height"
+
+        android:translationZ="25dp"
+        android:textColor="@color/text"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/dialog_nutrient_unit2"
+        app:layout_constraintStart_toStartOf="@+id/dialog_nutrient_unit2"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_nutrient_unit2" />
+
+
+    <View
+        android:id="@+id/viewa3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="30dp"
+
+
+
+        android:background="@drawable/edittext_dropshadow"
+
+        android:elevation="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/view7"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/viewa5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginHorizontal="30dp"
+
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittext_dropshadow"
+        android:elevation="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewa4"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <TextView
+        android:id="@+id/dialog_nutrient5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+
+        android:layout_marginTop="16dp"
+        android:text="Age"
+        android:textColor="@color/text"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        android:translationZ="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewa5"
+        app:layout_constraintStart_toStartOf="@+id/viewa5"
+        app:layout_constraintTop_toTopOf="@+id/viewa5" />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginTop="8dp"
+
+        android:text="Your Age"
+        android:textColor="@color/text"
+        android:textSize="12dp"
+        android:translationZ="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/dialog_nutrient5"
+        app:layout_constraintStart_toStartOf="@+id/dialog_nutrient5"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_nutrient5" />
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_person_24"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="30dp"
+
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edittext_dropshadow"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:fontFamily="@font/cabin_bold"
+        android:text="BMI"
+        android:textColor="@color/text"
+        android:textSize="15dp"
+
+        android:translationZ="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="40dp"
+
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_dropshadow"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtProfile"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="@+id/txtProfile"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfile" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+        android:text="Status"
+        android:layout_marginTop="16dp"
+
+        android:textColor="@color/text"
+        android:textSize="15dp"
+        android:translationZ="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+         />
+
+    <View
+        android:id="@+id/textView19"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="30dp"
+
+        android:layout_marginStart="24dp"
+        android:background="@drawable/edittext_dropshadow"
+        android:elevation="20dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintStart_toEndOf="@+id/view7"
+        app:layout_constraintTop_toTopOf="@+id/view7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtFatPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+        android:text="Fat Percent"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/text"
+        android:translationZ="20dp"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/txtDisplayBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:translationZ="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/text"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtBMI"
+        app:layout_constraintStart_toStartOf="@+id/txtBMI"
+        app:layout_constraintTop_toBottomOf="@+id/txtBMI" />
+
+    <TextView
+        android:id="@+id/txtDisplayStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:translationZ="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/text"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtStatus"
+        app:layout_constraintStart_toStartOf="@+id/txtStatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtStatus" />
+
+    <TextView
+        android:id="@+id/txtDisplayFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:translationZ="20dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/text"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtFatPercentage"
+        app:layout_constraintStart_toStartOf="@+id/txtFatPercentage"
+        app:layout_constraintTop_toBottomOf="@+id/txtFatPercentage" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        style="@style/buttonGrad"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/ic_menu_camera"
+        android:elevation="40dp"
+
+        android:fontFamily="@font/cabin_bold"
+        android:onClick="proceedButton"
+
+
+        android:text="+"
+        android:translationZ="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

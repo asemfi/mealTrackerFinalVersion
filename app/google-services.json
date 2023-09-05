@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "436990193676",
+    "project_id": "meal-tracker-15025",
+    "storage_bucket": "meal-tracker-15025.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436990193676:android:fd1c26a12884a072373e29",
+        "android_client_info": {
+          "package_name": "com.example.diettracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436990193676-gcvejq46d4u0btnt32umhjaf6ukjrtsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC66kJBJA9CKS8TDdz8FdQqZcMN91of3Xg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436990193676-gcvejq46d4u0btnt32umhjaf6ukjrtsg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

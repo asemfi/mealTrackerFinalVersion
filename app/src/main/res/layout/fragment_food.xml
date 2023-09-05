@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.food.FoodFragment" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cabin_bold"
+        android:text="Food Trends"
+        android:textColor="@color/text"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Macronutrients"
+        android:textColor="@color/text"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/montserrat"
+        android:visibility="gone"
+        android:text="Other Nutrients"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barCarbs" />
+
+    <TextView
+        android:id="@+id/text_gallery"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/barProtein"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="286dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="48dp"
+
+
+        android:max="50"
+        android:progress="0"
+        android:progressTint="@color/orange"
+        android:scaleY="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:layout_constraintWidth_default="percent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+        android:text="@string/protein"
+        android:textColor="@color/text"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/barProtein"
+        app:layout_constraintEnd_toEndOf="@+id/barProtein"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="@+id/barProtein" />
+
+    <ProgressBar
+        android:id="@+id/barFats"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="286dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+
+        android:max="100"
+        android:progress="0"
+        android:progressTint="@color/orange"
+        android:scaleY="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barProtein"
+        app:layout_constraintWidth_default="percent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+        android:text="Carbs"
+        android:textColor="@color/text"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/barFats"
+        app:layout_constraintEnd_toEndOf="@+id/barFats"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="@+id/barFats" />
+
+    <ProgressBar
+        android:id="@+id/barCarbs"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="286dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+
+        android:progress="0"
+        android:max="100"
+        android:progressTint="@color/orange"
+        android:scaleY="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barFats"
+        app:layout_constraintWidth_default="percent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cabin_bold"
+        android:text="Fats"
+        android:textColor="@color/text"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/barCarbs"
+        app:layout_constraintEnd_toEndOf="@+id/barCarbs"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="@+id/barCarbs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
